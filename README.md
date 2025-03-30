@@ -22,3 +22,16 @@ In this implementation, a pre-trained **BERT (Bidirectional Encoder Representati
 - **Hugging Face's Transformers Library**: For implementing the BERT model and handling tokenization.
 - **PyTorch**: Framework used for model training and evaluation.
 - **Pandas**: Used for data manipulation and handling the CoQA dataset.
+
+## Dataset
+The model is fine-tuned using the CoQA dataset, which can be downloaded from Stanford's CoQA page. The dataset is used to train and test the model on conversational question-answering tasks.
+
+## Usage
+Once the dependencies are installed, you can run the notebook to train and evaluate the model.
+
+- **Data Loading and Preprocessing**: The CoQA dataset is loaded, and preprocessing steps are applied to format the data into a suitable form for training.
+- **Fine-tuning BERT**: The pre-trained BERT model is fine-tuned on the CoQA dataset to adapt to the conversational QA task.
+- **Model Evaluation**: After training, the model’s performance is evaluated using various metrics based on the CoQA dataset.
+
+## Evaluation Metrics
+The performance of the model is evaluated using the F1 score and Exact Match (EM) metrics, commonly used for question answering tasks. These metrics help measure how accurately the model answers the questions compared to the ground truth.
